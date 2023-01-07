@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Functions training</title>
+<script type='text/javascript'>
+document.write(Math.pow(2,3)+"<br>"+Math.ceil(4.2)+"<br>"+Math.floor(5.9)+"<br>");
+function average()
+{
+var a=parseInt(prompt());
+var b=parseInt(prompt());
+var c=parseInt(prompt());
+document.write("Average="+((a+b+c)/3)+"<br>");
+}
+average();
+function cube(a)//return type
+{
+return Math.pow(a,3);
+}
+function square(a)//void type
+{
+document.write(i+"^2="+Math.pow(a,2)+"<br>");
+}
+for(var i=1;i<=5;i++)
+document.write(i+"^3="+cube(i)+"<br>");
+
+for(;i<=10;i++)
+square(i);
+function print(a,b,c)
+{
+document.write(a+"  "+b+"  "+c+"<br>");
+}
+print(3,5);
+function even()
+{
+var sum=0;
+for(var i=1;i<=10;i++)
+{
+var x=parseInt(prompt());
+if(x%2==0)
+sum+=x;
+}
+document.write("sum of even numbers="+sum);
+}
+even();
+function gg()
+{
+document.getElementById('nob').innerText="17 crocodiles ";
+document.getElementById('nub').innerHTML=prompt("Enter inside em");
+}
+
+</script>
+</head>
+<body onload='gg(); document.getElementById("nab").innerText="H";'>
+<p id='nab' style='font-size:20pt;color:#E13220'></p>
+<strong id='nob'></strong>
+<em id='nub'></em>
+</body>
+</html>
